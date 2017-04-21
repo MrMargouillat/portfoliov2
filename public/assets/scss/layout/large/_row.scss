@@ -1,0 +1,9 @@
+.row {
+    @include display-flex;
+    @include flex-wrap(wrap);
+    justify-content: space-around;
+}
+
+.col-l {
+    width: 250px;
+}

@@ -1,0 +1,27 @@
+.gallery {
+    ul {
+        list-style: none;
+        text-align: center;
+        li {
+            display: inline;
+            padding: 0 5px;
+            position: relative;
+            img {
+                max-height: 200px;
+                @include opacity(0.7);
+                @include transition-property(all);
+                @include transition-duration(.3s);
+                @include transition-timing-function(ease-in-out);
+                border: 10px solid transparent;
+                &:hover {
+                    @include opaque;
+                    cursor: pointer;
+                    @include scale(1.2)
+                }
+            }
+        }
+    }
+    .loadmore-l {
+        text-align: center;
+    }
+}
