@@ -1,8 +1,8 @@
 $(document).ready(() => {
     $('.app').click(() => {
-        $("body").toggleClass("nav-active")
+        $('.cache').fadeIn()
     })
     $(".cache").click(() => {
-        $("body").toggleClass("nav-active")
+        $('.cache').fadeOut()
     })
 })

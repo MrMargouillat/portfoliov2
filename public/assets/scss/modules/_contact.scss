@@ -1,0 +1,21 @@
+.contact {
+    .contact-split {
+        display: flex;
+    }
+    .contact-left {
+        flex: 1;
+    }
+    .contact-right {
+        border-left: solid 3px $color_accent;
+        flex: 2;
+        padding-left: 10px;
+        ul {
+            font-size: 1em;
+            list-style: none;
+            padding-left: 0;
+            i {
+                margin-right: 5px;
+            }
+        }
+    }
+}

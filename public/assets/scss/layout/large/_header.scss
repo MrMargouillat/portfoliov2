@@ -18,22 +18,9 @@
     padding: 9px 20px;
 }
 
-.header-search-l {
-    display: flex;
-    padding: 20px;
-}
-
-.header-search-form {
-    flex-grow: 1;
-}
-
 .logo {
     flex-grow: 0;
     font-size: 50px;
-}
-
-.header-search-login {
-    flex-grow: 0;
 }
 
 .test {
@@ -65,7 +52,7 @@
 
 .cache {
     display: none;
-    @include opacity(0);
+    @include opacity(.7);
     @include background( radial-gradient( to top right, lighten(#000, 20%), #000));
     /* Standard syntax */
     z-index: 999999;
@@ -77,23 +64,12 @@
     position: fixed;
 }
 
-.nav-active .cache {
-    transition-duration: 3s;
-    @include opacity(.7);
-    display: block;
-}
-
 .nav-ul {
     position: absolute;
-    transform: translateX(100%);
     top: 20px;
     right: 20px;
     transition-duration: 3s;
     font-size: 50px;
     list-style: none;
     text-align: right;
-}
-
-.nav-active .cache .nav-ul {
-    transform: translateX(0%);
 }
